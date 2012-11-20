@@ -1,0 +1,62 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>Ejemplo Formulario</title>
+</head>
+
+<body>
+	<div align="center">
+		<form name="frm_datos" method="post" action="formulario.html">
+			<table>
+				<tr>
+					<td>Nombre</td>
+					<td><input type="text" name="nombre"  /></td>
+				</tr>
+				<tr>
+					<td>Login</td>
+					<td><input type="text" name="login"  /></td>
+				</tr>
+				<tr>
+					<td>Contrase&ntilde;a</td>
+					<td><input type="password" name="login"  /></td>
+				</tr>
+				<tr>
+					<td>G&eacute;nero</td>
+				  <td>
+					  <label>
+					  <input name="genero" type="radio" value="F" />
+				    Femenino</label>
+					<label>
+					  <input name="genero" type="radio" value="M" />
+				    Masculino</label>
+				  </td>
+				</tr>
+				<tr>
+					<td>Gustos</td>
+					<td><label>
+					  <input type="checkbox" name="gustos" value="D" />
+				    Deporte</label>
+					<label>
+					  <input type="checkbox" name="gustos" value="R" />
+				    Licor</label>
+					<label>
+					  <input type="checkbox" name="gustos" value="C" />
+				    Chicas</label></td>
+				</tr>
+				<tr>
+					<td>Opini&oacute;n</td>
+					<td><textarea name="opinion"></textarea></td>
+				</tr>
+				<tr>
+					<td>Ciudad</td>
+					<td><input type="text" name="ciudad"   /></td>
+				</tr>
+				<tr>
+					<td colspan="2" align="center"><input type="submit" name="bt_enviar" value="Enviar"  /></td>
+				</tr>
+			</table>
+		</form>
+	</div>
+</body>
+</html>
