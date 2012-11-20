@@ -1,0 +1,57 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>Indice de Masa Corporal</title>
+<script type="text/javascript"> 
+    function IMC() 
+    { 
+		var peso, altura, imc, resultado;  
+        peso = document.getElementById("peso").value; 
+        altura = document.getElementById("altura").value/100; 
+        imc = peso / (altura^2); 
+        document.getElementById("imc").value=imc; 
+		if(imc <= 18.5) { 
+			resultado="Tienes Infrapeso"; 
+		}else if(imc >= 18.5 && imc < 25){ 
+			resultado="Tienes un peso normal";     
+	    }else if(imc >= 25 && imc < 30){ 
+			resultado="Tienes sobrepeso";     
+	    }else{ 
+    		resultado="Eres un obeso"; 
+        }      
+		document.getElementById("resultado").value=resultado; 
+    } 
+</script>
+</head>
+
+<body>
+<table width="390" border="1" cellpadding="1" cellspacing="1" align="center">
+  <tr>
+    <td colspan="2"><div align="center"><strong>INDICE DE MASA CORPORAL </strong></div></td>
+  </tr>
+  <tr>
+    <td width="122">Peso en Kg: </td>
+    <td width="252"><input type="text" name="peso" id="peso" size="10" maxlength="10" /></td>
+  </tr>
+  <tr>
+    <td>Altura en cm: </td>
+    <td><input type="text" name="altura" id="altura" size="10" maxlength="10" /></td>
+  </tr>
+  <tr>
+    <td>IMC:</td>
+    <td><input type="text" name="imc" id="imc" size="10" maxlength="10" /></td>
+  </tr>
+  <tr>
+    <td colspan="2"><div align="center">
+      <input name="button" type="button" onclick="IMC()" value="Calcular IMC" />
+    </div></td>
+  </tr>
+  <tr>
+    <td>Resultado:</td>
+    <td><input type="text" name="resultado" id="resultado" size="42" /></td>
+  </tr>
+</table>
+
+</body>
+</html>
